@@ -1,0 +1,19 @@
+﻿@model IEnumerable<string>
+@if(Model.Any())
+{
+    @foreach (var modelName in Model)
+    {
+
+        <div class="card car-box col-12 col-sm-6 col-md-3">
+            <img class="card-img-top" src="~/images/car.jpg" />
+            <div class="card-body">
+                <h5 class="card-title text-center">@modelName</h5>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <h2 class="text-center">No Car Found</h2>
+}
+
